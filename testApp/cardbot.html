@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+   
+<body style="background-color:rgb(46, 46, 46);">
+<style>
+@font-face { font-family: Upheaval; src: url(fonts/upheavtt.ttf); } 
+img {
+  width: 100;
+  object-fit: contain;
+}
+
+#bannerimage {
+    
+  width: 100%;
+  background-image: url(images/banner.png);
+  block-size: fit-content;
+  background-size: cover;
+  height: 620px;
+  background-color: rgb(255, 255, 255);
+  background-position: center;
+  background-repeat: no-repeat; 
+  image-rendering: smooth;
+}
+#home-link {
+    position: absolute;
+    width: 100%;    /* width of the logo */
+    height: 620px;   /* height of the logo */
+    top: 0; left: 0; /* top-left corner of logo */
+    border: 0;
+    float: left;
+}
+#leftnav{
+  position: absolute;
+  left: 0px;
+  width: 50%;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+
+
+  
+}
+@keyframes hover {
+  0%   {filter: grayscale(100%);}
+  25%  {filter: grayscale(50%);}
+  50%  {filter: grayscale(25%);}
+  100% {filter: grayscale(0%);}
+}
+
+@keyframes notHover {
+  0%   {filter: grayscale(0%);}
+  25%  {filter: grayscale(25%);}
+  50%  {filter: grayscale(50%);}
+  100% {filter: grayscale(100%);}
+}
+.aboutright{
+  position: absolute;
+  background-image: url(images/screenshot3.png);
+  animation-duration: 1s;
+  right: 0px;
+  width: 50%;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+  background-size: cover;
+}
+
+.aboutright:hover{
+  animation-name: hover;
+  animation-play-state: running;
+  animation-duration: 250ms;
+  animation-fill-mode: forwards;
+}
+.aboutright:not(hover){
+  animation-name: notHover;
+  animation-play-state: running;
+  animation-duration: 250ms;
+  animation-fill-mode: forwards;
+}
+
+</style>
+<div id = "bannerimage">
+  <a href="https://store.steampowered.com/app/1501740/Cardbot/" id="home-link"></a>
+</div>
+
+<div id = "leftnav">
+
+  <body font-family: 'Upheaval', Fallback, sans-serif>
+    <h1 {
+      font-family: 'CustomFont', Arial, sans-serif;
+      font-weight:normal;
+      font-style:normal;
+    }><h1>
+  <h1 font-family: 'Upheaval' style="color: #acacac;">Nightscorched Dimension: Perel</h1>
+  <h1 style="color: #acacac;">New Weapons</h1>
+  <h1 style="color: #acacac;">New Regions</h1>
+  <h1 style="color: #acacac;">Story</h1>
+  <h1 style="color: #acacac;">Features</h1>
+  <h1 style="color: #acacac;">News</h1>
+  <h1 style="color: #acacac;">Socials</h1>
+  </body>
+</div>
+
+<div class="aboutright"></div>
+
+<iframe src="https://store.steampowered.com/widget/1501740/" frameborder="0" width="646" height="190"></iframe>
+</body>
+</html>
