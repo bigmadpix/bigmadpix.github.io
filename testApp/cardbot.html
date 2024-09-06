@@ -1,25 +1,26 @@
 <!DOCTYPE html>
 <html>
-   
+
 <body style="background-color:rgb(46, 46, 46);">
 <style>
 @font-face { font-family: Upheaval; src: url(fonts/upheavtt.ttf); } 
-img {
-  width: 100;
-  object-fit: contain;
-}
+
 
 #bannerimage {
-    
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-width: 0;
   width: 100%;
-  background-image: url(images/banner.png);
+  background-image: url(images/cardbotHeaderSnap0.png);
   block-size: fit-content;
-  background-size: cover;
+  background-size: contain;
   height: 620px;
   background-color: rgb(255, 255, 255);
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat; 
   image-rendering: smooth;
+  border: 0;
 }
 #home-link {
     position: absolute;
@@ -30,6 +31,7 @@ img {
     float: left;
 }
 #leftnav{
+  top: 620px;
   position: absolute;
   left: 0px;
   width: 50%;
@@ -53,6 +55,7 @@ img {
   100% {filter: grayscale(100%);}
 }
 .aboutright{
+  top: 620px;
   position: absolute;
   background-image: url(images/screenshot3.png);
   animation-duration: 1s;
@@ -84,11 +87,6 @@ img {
 <div id = "leftnav">
 
   <body font-family: 'Upheaval', Fallback, sans-serif>
-    <h1 {
-      font-family: 'CustomFont', Arial, sans-serif;
-      font-weight:normal;
-      font-style:normal;
-    }><h1>
   <h1 font-family: 'Upheaval' style="color: #acacac;">Nightscorched Dimension: Perel</h1>
   <h1 style="color: #acacac;">New Weapons</h1>
   <h1 style="color: #acacac;">New Regions</h1>
