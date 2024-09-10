@@ -6,17 +6,19 @@
 @font-face { font-family: Upheaval; src: url(fonts/upheavtt.ttf); } 
 
 
-#bannerimage {
+.bannerimage {
   position: absolute;
   top: 0;
   left: 0;
+  right: 0;
+  bottom: 0;
   border-width: 0;
   width: 100%;
-  background-image: url(testApp\src\cardbotHeaderSnap0.png);
+  background-image: url(images/cardbotHeaderSnap0new\ \(1\).png);
   block-size: fit-content;
   background-size: contain;
-  height: 620px;
-  background-color: rgb(255, 255, 255);
+  height: 100%;
+  background-color:rgb(32, 29, 29);
   background-position: top;
   background-repeat: no-repeat; 
   image-rendering: smooth;
@@ -31,15 +33,27 @@
     float: left;
 }
 #leftnav{
-  top: 620px;
-  position: absolute;
-  left: 0px;
+  text-shadow: 0 0 13px #a5a5a5;
+  font-family: Upheaval;
+  font-size: 24px;
+  top: 0px;
+left: 0;
+  position: sticky;
+
+
   width: 50%;
-  height: 100%;
-  background-color: rgb(0, 0, 0);
+  height: 999px;
+  background-color: rgba(17, 17, 17, 0.836);
+  color: #ffffff;
+  -webkit-font-smoothing: none;
+}
 
-
-  
+img {
+  box-shadow: 0px 0px 0 0 #fd9220;
+  top: 100px;
+  left: 0px;
+  height: 30%;
+  position: absolute;
 }
 @keyframes hover {
   0%   {filter: grayscale(100%);}
@@ -54,18 +68,44 @@
   50%  {filter: grayscale(50%);}
   100% {filter: grayscale(100%);}
 }
-.aboutright{
-  top: 620px;
+
+.rightSide{
+  top: 911px;
   position: absolute;
+  right: 0px;
+  width: 100%;
+  height: 200%;
+  z-index: -1;
+}
+.aboutright{
+  top: 0px;
+  position: relative;
   background-image: url(images/screenshot3.png);
   animation-duration: 1s;
   right: 0px;
-  width: 50%;
+  width: 100%;
   height: 100%;
-  background-color: rgb(0, 0, 0);
-  background-size: cover;
-}
+  background-color: rgb(32, 29, 29);
+  background-size:cover;
+  position: relative;
+  top:0%;
+  Transform:translateY (-100%);
 
+  z-index: -1;
+}
+.mainPage{
+  top: 879px;
+  position: absolute;
+
+  animation-duration: 1s;
+  right: 0px;
+  width: 100%;
+  height: 2000%;
+
+  background-size: cover;
+
+  z-index: 0;
+}
 .aboutright:hover{
   animation-name: hover;
   animation-play-state: running;
@@ -80,24 +120,53 @@
 }
 
 </style>
-<div id = "bannerimage">
-  <a href="https://store.steampowered.com/app/1501740/Cardbot/" id="home-link"></a>
+<div>
+
+<div>
+
+  <div>
+    <div class = "bannerimage" top offset:100px;>
+      <img src="images/loog copy.png">
+      <a href="https://store.steampowered.com/app/1501740/Cardbot/" id="home-link"></a>
+    </div>
+  </div>
+
+  <div> 
+
+  
+</div>
+<div class="rightSide">
+  <div class="aboutright"></div>
+  <div class="aboutright"></div>
+  <div class="aboutright"></div>
+  <div class="aboutright"></div>
+  <div class="aboutright"></div>
+  <div class="aboutright"></div>
+  <div class="aboutright"></div>
 </div>
 
-<div id = "leftnav">
+    <div class="mainPage">
+      
+      <div id = "leftnav" font-family = 'Upheaval'>
 
-  <body font-family: 'Upheaval', Fallback, sans-serif>
-  <h1 font-family: 'Upheaval' style="color: #acacac;">Nightscorched Dimension: Perel</h1>
-  <h1 style="color: #acacac;">New Weapons</h1>
-  <h1 style="color: #acacac;">New Regions</h1>
-  <h1 style="color: #acacac;">Story</h1>
-  <h1 style="color: #acacac;">Features</h1>
-  <h1 style="color: #acacac;">News</h1>
-  <h1 style="color: #acacac;">Socials</h1>
-  </body>
+  
+        <h1>Nightscorched Dimension, Perel</h1>
+        <h1>New Weapons</h1>
+        <h1>New Regions</h1>
+        <h1>Story</h1>
+        <h1>Features</h1>
+        <h1>News</h1>
+        <h1>Socials</h1>
+      
+      </div>
+      
+  </div>
+
 </div>
 
-<div class="aboutright"></div>
+
+</div>
+
 
 <iframe src="https://store.steampowered.com/widget/1501740/" frameborder="0" width="646" height="190"></iframe>
 </body>
